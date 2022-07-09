@@ -1,0 +1,12 @@
+/* Agregando variables en CSS */
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-fiels: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+/* Agregando el tipo de letra */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
