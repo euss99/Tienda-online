@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-fiels: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 300px);
+            gap: 26px;
+            place-content: center;
+        }
+        .product-card {
+            width: 300px;
+        }
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+        }
+        .product-info figure {
+            margin: 0;
+        }
+        .product-info div p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .product-info div p:nth-child(2){
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 0;
+            color: var(--very-light-pink);
+        }
+        .product-info figure img {
+            width: 35px;
+            height: 35px;
+        }
+        @media (max-width: 640px) {
+            .cards-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 175px);
+                gap: 26px;
+           }
+           .product-card {
+                width: 175px;
+            }
+            .product-card img {
+                width: 100%;
+                height: 175px;
+                border-radius: 10px;
+                object-fit: cover;
+             }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+
+            <div class="product-card">
+               <img src="./Platzi Yard Sale/productos/camisa1.png" alt="" class="product">
+               <div class="product-info">
+                    <div>
+                        <p>$299.00</p>
+                        <p>Camisa manga corta</p> 
+                    </div>
+                   <figure>
+                     <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                   </figure>
+               </div>
+            </div>
+            <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/camisa2.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$299.00</p>
+                        <p>Camisa básica</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/camisa3.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$299.00</p>
+                        <p>Camisa básica</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/camisa4.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$299.00</p>
+                        <p>Camisa manga corta</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/chamarra1.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$499.00</p>
+                        <p>Chamarra bomber</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/chamarra2.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$499.00</p>
+                        <p>Chamarra bomber</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/chamarra3.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$499.00</p>
+                        <p>Chamarra tipo aviador</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/chamarra4.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$499.00</p>
+                        <p>Chamarra aviador antelina</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/playera1.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$239.00</p>
+                        <p>Playera manga corta</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/playera2.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$239.00</p>
+                        <p>Playera manga corta</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/playera3.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$239.00</p>
+                        <p>Playera manga corta</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/playera4.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$239.00</p>
+                        <p>Playera manga corta</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/sudadera1.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$499.00</p>
+                        <p>Sudadera Coca-Cola</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/sudadera2.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$299.00</p>
+                        <p>Sudadera cuello redondo</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/sudadera3.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$499.00</p>
+                        <p>Sudadera AC/DC</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/sudadera4.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$299.00</p>
+                        <p>Sudadera cuello redondo</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/tenis1.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$399.00</p>
+                        <p>Tenis casual básicos</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/tenis2.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$299.00</p>
+                        <p>Tenis casual básicos</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/tenis3.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$399.00</p>
+                        <p>Tenis casual básicos</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="./Platzi Yard Sale/productos/tenis4.png" alt="" class="product">
+                <div class="product-info">
+                    <div>
+                        <p>$399.00</p>
+                        <p>Tenis casual básicos</p> 
+                    </div>
+                    <figure>
+                      <img src="./Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+
+        </div>
+    </section>
+</body>
+</html>
