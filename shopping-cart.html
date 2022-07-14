@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+         :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-fiels: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .title-container {
+            display: flex;
+        }
+        .title-container img {
+            transform: rotate(180deg);
+            margin-right: 14px;
+        }
+        .title {
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+        .product-detail {
+            width: 360px;
+            padding: 24px;
+            position: absolute;
+            right: 0;
+            box-sizing: border-box;
+        }
+        .my-order-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            align-items: center;
+            background-color: var(--text-input-fiels);
+            margin-bottom: 24px;
+            border-radius: 8px;
+            padding: 0 24px;
+        }
+        .order p:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+        .order p:nth-child(2) {
+            text-align: end;
+            font-weight: bold;
+        }
+        .order p span:nth-child(2) {
+           font-size: var(--sm);
+           color: var(--very-light-pink);
+        }
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 24px;
+            align-items: center;
+         }   
+        .shopping-cart figure{
+            margin: 0;
+        }
+        .shopping-cart figure img {
+            width: 70px;
+            height: 85px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .shopping-cart p:nth-child(2) {
+            color: var(--very-light-pink);
+        }
+        .shopping-cart p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .shopping-cart .close {
+            cursor: pointer;
+        }
+        .primary-button {
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+
+        @media (max-width: 640px) {
+            .product-detail {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+
+        <div class="title-container">
+            <img src="./imagenes/icons/flechita.svg" alt="arrow">
+            <h1 class="title">Shopping cart</h1>
+        </div>
+                    <div class="my-order-content">
+
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/camisa1.png" alt="camisa1">
+                    </figure>
+                    <p>Camisa manga corta</p>
+                    <p>$299.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+        
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/camisa2.png" alt="camisa2">
+                    </figure>
+                    <p>Camisa básica</p>
+                    <p>$299.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+        
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/chamarra1.png" alt="chamarra1">
+                    </figure>
+                    <p>Chamarra bomber</p>
+                    <p>$499.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+        
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/chamarra2.png" alt="chamarra2">
+                    </figure>
+                    <p>Chamarra bomber</p>
+                    <p>$499.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+        
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/playera1.png" alt="playera1">
+                    </figure>
+                    <p>Playera manga corta</p>
+                    <p>$239.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+        
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/playera2.png" alt="playera2">
+                    </figure>
+                    <p>Playera manga corta</p>
+                    <p>$239.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+        
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/sudadera1.png" alt="sudadera1">
+                    </figure>
+                    <p>Sudadera Coca-Cola</p>
+                    <p>$499.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+        
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/sudadera2.png" alt="sudadera2">
+                    </figure>
+                    <p>Sudadera cuello redondo</p>
+                    <p>$299.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+        
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/tenis1.png" alt="tenis1">
+                    </figure>
+                    <p>Tenis casual básicos</p>
+                    <p>$399.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+        
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="./imagenes/productos/tenis2.png" alt="tenis2">
+                    </figure>
+                    <p>Tenis casual básicos</p>
+                    <p>$299.00</p>
+                    <img src="./imagenes/icons/icon_close.png" alt="close" class="close">
+                </div>
+
+                <div class="order">
+                    <p>
+                        <span>Total</span>
+                    </p>
+                    <p>
+                        $3570.00
+                    </p>
+                </div>
+
+                <button class="primary-button">
+                    Checkout
+                </button>
+
+            </div>
+
+    </aside>
+</body>
+</html>
