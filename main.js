@@ -224,4 +224,3 @@ function renderProducts(array) {
 }
 // Llamando la función con el array donde tenemos la información de los productos "productList".
 renderProducts(producList);
-
