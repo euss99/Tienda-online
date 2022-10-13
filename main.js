@@ -3,27 +3,28 @@ const menuHamIcon = document.querySelector(".menu");
 const menuCarritoIcon = document.querySelector(".navbar-shopping-cart");
 const desktopMenu = document.querySelector(".desktop-menu");
 const mobileMenu = document.querySelector(".mobile-menu");
-const aside = document.querySelector(".product-detail");
+const shoppingCartContainer = document.querySelector("#shoppingCartContainer");
 const cardsContainer = document.querySelector(".cards-container")
 
 menuEmail.addEventListener("click", toggleDesktopMenu);
 menuHamIcon.addEventListener("click", toggleMobileMenu);
 menuCarritoIcon.addEventListener("click", toggleCarritoAside);
 
+// Activando la función de abrir los menus
 function toggleDesktopMenu() {
-    const isAsideClose = aside.classList.contains("inactive"); // Si esta cerrado el carrito de compras
+    const isAsideClose = shoppingCartContainer.classList.contains("inactive"); // Si esta cerrado el carrito de compras
 
     if (!isAsideClose) {
-        aside.classList.add("inactive"); // Cerrar el carrito de compras
+        shoppingCartContainer.classList.add("inactive"); // Cerrar el carrito de compras
     }
 
     desktopMenu.classList.toggle("inactive"); // Para activar la clase inactive del desktop-menu
 }
 function toggleMobileMenu() {
-    const isAsideClose = aside.classList.contains("inactive"); // Si esta cerrado el carrito de compras
+    const isAsideClose = shoppingCartContainer.classList.contains("inactive"); // Si esta cerrado el carrito de compras
 
     if (!isAsideClose) {
-        aside.classList.add("inactive"); // Cerrar el carrito de compras
+        shoppingCartContainer.classList.add("inactive"); // Cerrar el carrito de compras
     }
 
     mobileMenu.classList.toggle("inactive");
@@ -39,7 +40,7 @@ function toggleCarritoAside() {
         desktopMenu.classList.add("inactive"); // Cerrar el desktop menu
     }
 
-    aside.classList.toggle("inactive");
+    shoppingCartContainer.classList.toggle("inactive");
 }
 
 const producList = []; // Lista de productos
@@ -201,3 +202,4 @@ function renderProducts(array) {
 }
 // Llamando la función con el array donde tenemos la información de los productos "productList".
 renderProducts(producList);
+
