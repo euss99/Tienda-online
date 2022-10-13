@@ -384,7 +384,7 @@ aside {
 
 /* ===============================*/
 
-@media (max-width: 640px) {
+@media (max-width: 740px) {
     .menu {
         display: block;
     }
@@ -419,7 +419,7 @@ aside {
      }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 741px) {
     .mobile-menu {
         display: none;
     }
